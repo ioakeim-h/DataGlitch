@@ -12,8 +12,11 @@ setup(
   download_url = 'https://github.com/ioakeim-h/DataGlitch/archive/refs/tags/v0.1.tar.gz',    # I explain this later on
   keywords = ['data', 'cleaning', 'wrangling', 'engineering', 'pandas'],   
   install_requires=[            # I get to this in a second
-          'validators',
-          'beautifulsoup4',
+          'rapidfuzz',
+          'pandas',
+          'pandas.api.types',
+          'numpy',
+          'unidecode',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      
