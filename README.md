@@ -11,8 +11,10 @@ DataGlitch currently offers three functionalities:
 - `dtype_detector`: Find mixed data types in columns. 
 - `nonascii_handler`: Detect and handle non-ASCII characters.
 - `data_search`: Search for the existence of specific columns or values.
+
 <br>
 <br>
+
 ### dtype_detector
 
 The `dtype_detector` uses regular expressions to detect different data types in a column through the `find_numeric()` function. This function takes a pandas Series with data type `Object` as an argument and returns three new variables: `numeric`, `ambiguous` and `non_numeric`. Each of these contain a subset of the original column.
@@ -53,8 +55,10 @@ Other operations can occur directly on the dataframe. For instance, if wanting t
 ```
 df["col"] = df["col"].replace(",", ".", regex=True)
 ```
+
 <br>
 <br>
+
 ### nonascii_handler
 
 The `nonascii_handler` uses the `find_nonascii()` function to locate rows/values with non-ascii characters in a DataFrame or Series with data type `Object`. For handling non-ascii, the user is offerred three options:
@@ -68,8 +72,10 @@ If none of the above options are selected, the default returns the data as is.
 from DataGlitch.nonascii_handler import find_nonascii
 df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
+
 <br>
 <br>
+
 ### data_search
 
 `data_search` performs fuzzy string matching through the `rapidfuzz` library. It looks for the existance of columns in a dataset or particular values within a column. 
