@@ -1,5 +1,4 @@
-# DataGlitch
-## _A Python Toolkit for Handling Messy Data_
+# DataGlitch: _A Python Toolkit for Handling Messy Data_
 
 DataGlitch is a Python package designed to address common data challenges in a pandas DataFrame, including handling mixed data types, non-ASCII values, and facilitating dataset exploration. 
 
@@ -19,7 +18,7 @@ pip install DataGlitch
 
 DataGlitch currently offers three functionalities: `dtype_detector`, `nonascii_handler` and `data_search`. 
 
----
+
 ### dtype_detector
 
 The `dtype_detector` uses regular expressions to detect different data types in a column through the `find_numeric()` function. This function takes a pandas Series with data type `Object` as an argument and returns three new variables: `numeric`, `ambiguous` and `non_numeric`. Each of these contain a subset of the original column.
