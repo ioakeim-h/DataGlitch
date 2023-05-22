@@ -58,6 +58,7 @@ df["col"] = df["col"].replace(",", ".", regex=True)
 ```
 
 <br>
+---
 
 ### nonascii_handler
 
@@ -74,6 +75,7 @@ df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
 
 <br>
+---
 
 ### data_search
 
