@@ -19,8 +19,8 @@ setup(
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      
-    'Intended Audience :: Data Scientists/Engineers',      
-    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Intended Audience :: Developers',      
+    'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',   
     'Programming Language :: Python :: 3',      
     'Programming Language :: Python :: 3.9'
