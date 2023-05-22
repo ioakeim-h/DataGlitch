@@ -67,10 +67,10 @@ df["col"] = df["col"].replace(",", ".", regex=True)
 
 The `nonascii_handler` uses the `find_nonascii()` function to locate rows/values with non-ascii characters in a DataFrame or Series with data type `Object`. For handling non-ascii, the user is offerred three options:
 1. Drop all rows that contain non-ascii values by setting the `drop` parameter to `True`.
-2. Replace values with non-ascii with `np.nan` to indicate missigness by setting the `remove` parameter to `True` (default).
+2. Replace values with non-ascii with `np.nan` to indicate missigness by setting the `remove` parameter to `True` **(default)**.
 3. Translate values with non-ascii with the `unidecode` library by setting the `translate` parameter to `True`.
 
-If none of the above options are selected, the default returns the data as is.
+If none of the above options are selected, the data is returned as is.
 
 ```
 from DataGlitch.nonascii_handler import find_nonascii
