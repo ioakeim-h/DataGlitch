@@ -75,7 +75,7 @@ df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
 
 <br>
----
+<hr>
 
 ### data_search
 
