@@ -58,7 +58,7 @@ df["col"] = df["col"].replace(",", ".", regex=True)
 ```
 
 <br>
----
+<hr>
 
 ### nonascii_handler
 
