@@ -89,17 +89,16 @@ df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 from data_search import column_search, value_search
 ```
 
-Columns are identified through the `column_search()` function which takes a pandas DataFrame, the name of the column as a string, and a cut-off score which defaults to 80. The output contains a list of tuples where each tuple contains a match, a similarity score and the index of the column. For a less strict search, the cut-off score can be lowered.
+Columns are identified through the `column_search()` function which takes a pandas DataFrame, the name of the column as a string, and a cut-off score which defaults to 80. The output contains any matches and their similarity score. For a less strict search, the cut-off score can be lowered.
 
 ```
 column_search(df, "column_name", score_cutoff=80)
 ```
 
-The `value_search()` function looks for the existance of a value in a pandas Series. Even if the value under investigation is integer/float, it should be passed as string to the function. The returned output includes the matched value, a similarity score and the index.
+The `value_search()` function looks for the existance of a value in a pandas Series. Even if the value under investigation is integer/float, it should still be passed as string to the function. The output includes  any matches and their similarity score.
 
-Apply value_search:
 ```
-value_search(df["col"], "value")
+value_search(df["col"], "value", score_cutoff=80)
 ```
 
 
