@@ -7,9 +7,7 @@ Install with `pip`:
 pip install DataGlitch
 ```
 
-## Usage
-DataGlitch currently offer three functionalities.
-
+Currently offerring three functionalities:
 - `dtype_detector`: Find mixed data types in columns. 
 - `nonascii_handler`: Detect and handle non-ASCII characters.
 - `data_search`: Search for the existence of specific columns or values.
