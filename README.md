@@ -38,17 +38,19 @@ The `dtype_detector` uses regular expressions to detect different data types in 
 <br>
 
 ```
+# Import and apply
 from DataGlitch.dtype_detector import find_numeric
 numeric, ambiguous, non_numeric = find_numeric(df["col"])
 ```
+Example operations:
 
-Drop non_numeric subset from dataframe:
 ```
+# Drop non_numeric subset from dataframe
 df = df[~df["col"].isin(non_numeric)]
 ```
 
-Replace values in subset with missing values:
 ```
+# Replace values in subset with NAs
 import numpy as np
 df.loc[df["col"].isin(non_numeric), "col"] = np.nan
 ```
