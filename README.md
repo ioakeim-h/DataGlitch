@@ -89,12 +89,11 @@ from data_search import column_search, value_search
 
 Columns are identified through the `column_search()` function which takes a pandas DataFrame, the name of the column as a string, and a cut-off score which defaults to 80. If there is a match, it is printed along with a similarity score and the index. For a less strict search, the cut-off score can be lowered.
 
-Apply column_search:
 ```
 column_search(df, "column_name", score_cutoff=80)
 ```
 
-The `value_search()` function looks for the existance of a value in a pandas Series. Even if the value under investigation is integer/float, it should be passed as string to the function.
+The `value_search()` function looks for the existance of a value in a pandas Series. Even if the value under investigation is integer/float, it should be passed as string to the function. The returned output includes the matched value, a similarity score and the index.
 
 Apply value_search:
 ```
