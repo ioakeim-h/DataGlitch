@@ -15,6 +15,8 @@ DataGlitch currently offers three functionalities:
 - `data_search`: Search for the existence of specific columns or values.
 
 <br>
+<hr>
+<br>
 
 ### dtype_detector
 
@@ -59,6 +61,7 @@ df["col"] = df["col"].replace(",", ".", regex=True)
 
 <br>
 <hr>
+<br>
 
 ### nonascii_handler
 
@@ -76,6 +79,7 @@ df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 
 <br>
 <hr>
+<br>
 
 ### data_search
 
