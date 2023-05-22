@@ -35,6 +35,7 @@ The `dtype_detector` uses regular expressions to detect different data types in 
 
 `non_numeric` can contain any value that is not classified as `numeric` or `ambiguous`. Examples: `2000-01-01`, `DataGlitch6000!`.
 
+
 Import and apply:
 ```
 from DataGlitch.dtype_detector import find_numeric
