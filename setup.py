@@ -14,7 +14,6 @@ setup(
   install_requires=[            
           'rapidfuzz',
           'pandas',
-          'pandas.api.types',
           'numpy',
           'unidecode',
       ],
