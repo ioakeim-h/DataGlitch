@@ -4,7 +4,7 @@ from pandas.api.types import is_object_dtype
 from unidecode import unidecode
 
 
-def find_nonascii(data, drop=False, remove=True, translate=False):
+def find_nonascii(data, drop=False, remove=False, translate=False):
 
     if not (isinstance(data, pd.DataFrame) or isinstance(data, pd.Series)):
         raise TypeError("Input data must be a pandas DataFrame or Series")
