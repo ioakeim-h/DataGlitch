@@ -34,6 +34,7 @@ The `dtype_detector` uses regular expressions to detect different data types in 
 `ambiguous` can contain any value that is interpreted as numeric by the regular expression if it also has alphabetic or special characters at its front or end. Examples: `50cents`, `$10`.
 
 `non_numeric` can contain any value that is not classified as `numeric` or `ambiguous`. Examples: `2000-01-01`, `DataGlitch6000!`.
+<br>
 
 
 Import and apply:
