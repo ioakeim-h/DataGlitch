@@ -7,14 +7,14 @@ Install with `pip`:
 pip install DataGlitch
 ```
 
-## Features
+## Usage
+DataGlitch currently offer three functionalities.
 
 - `dtype_detector`: Find mixed data types in columns. 
 - `nonascii_handler`: Detect and handle non-ASCII characters.
 - `data_search`: Search for the existence of specific columns or values.
 
-## Usage
-
+---
 ### dtype_detector
 
 The `dtype_detector` uses regular expressions to detect different data types in a column through the `find_numeric()` function. This function takes a pandas Series with data type `Object` as an argument and returns three new variables: `numeric`, `ambiguous` and `non_numeric`. Each of these contain a subset of the original column.
