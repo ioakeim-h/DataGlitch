@@ -35,9 +35,8 @@ The `dtype_detector` uses regular expressions to detect different data types in 
 
 `non_numeric` can contain any value that is not classified as `numeric` or `ambiguous`. Examples: `2000-01-01`, `DataGlitch6000!`.
 
-<br><br>
+<br>
 
-Import and apply:
 ```
 from DataGlitch.dtype_detector import find_numeric
 numeric, ambiguous, non_numeric = find_numeric(df["col"])
@@ -69,7 +68,6 @@ The `nonascii_handler` uses the `find_nonascii()` function to locate rows/values
 
 If none of the above options are selected, the default returns the data as is.
 
-Import and apply:
 ```
 from DataGlitch.nonascii_handler import find_nonascii
 df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
@@ -80,7 +78,6 @@ df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 
 `data_search` performs fuzzy string matching through the `rapidfuzz` library. It looks for the existance of columns in a dataset or particular values within a column. 
 
-Import:
 ```
 from data_search import column_search, value_search
 ```
