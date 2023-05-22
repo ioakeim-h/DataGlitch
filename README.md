@@ -1,4 +1,4 @@
-# DataGlitch: _A Python Toolkit for Handling Messy Data_
+# DataGlitch: _A Python Toolkit for Messy Data_
 
 DataGlitch is a Python package designed to address common data challenges in a pandas DataFrame, including handling mixed data types, non-ASCII values, and facilitating dataset exploration. 
 
