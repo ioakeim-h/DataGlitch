@@ -4,9 +4,9 @@ DataGlitch is a Python package designed to address common data challenges in a p
 
 ## Features
 
-- Mixed Data Types: Find mixed data types in columns. 
-- Non-ASCII: Detect and handle non-ASCII characters.
-- Search Functionality: Search for the existence of specific columns or values.
+- `dtype_detector`: Find mixed data types in columns. 
+- `nonascii_handler`: Detect and handle non-ASCII characters.
+- `data_search: Search for the existence of specific columns or values.
 
 ## Installation
 
@@ -14,10 +14,8 @@ Install with `pip`:
 ```
 pip install DataGlitch
 ```
+
 ## Usage
-
-DataGlitch currently offers three functionalities: `dtype_detector`, `nonascii_handler` and `data_search`. 
-
 
 ### dtype_detector
 
