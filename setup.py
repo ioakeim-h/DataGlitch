@@ -1,5 +1,8 @@
 from distutils.core import setup
 
+with open('README.md', 'r') as readme_file:
+    long_description = readme_file.read()
+
 setup(
   name = 'DataGlitch',         
   packages = ['DataGlitch'],   
@@ -25,4 +28,6 @@ setup(
     'Programming Language :: Python :: 3',      
     'Programming Language :: Python :: 3.9'
   ],
+  long_description=long_description,
+  long_description_content_type='text/markdown'
 )
