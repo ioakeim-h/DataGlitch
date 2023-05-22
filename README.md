@@ -7,7 +7,6 @@ pip install DataGlitch
 ```
 
 <br>
-<br>
 
 ## Usage
 DataGlitch currently offers three functionalities:
@@ -15,7 +14,6 @@ DataGlitch currently offers three functionalities:
 - `nonascii_handler`: Detect and handle non-ASCII characters.
 - `data_search`: Search for the existence of specific columns or values.
 
-<br>
 <br>
 
 ### dtype_detector
@@ -60,7 +58,6 @@ df["col"] = df["col"].replace(",", ".", regex=True)
 ```
 
 <br>
-<br>
 
 ### nonascii_handler
 
@@ -76,7 +73,6 @@ from DataGlitch.nonascii_handler import find_nonascii
 df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
 
-<br>
 <br>
 
 ### data_search
