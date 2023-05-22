@@ -9,7 +9,7 @@ setup(
   author = 'Ioakeim Hadjimpalasis',                   
   author_email = 'ioakeim.h@gmail.com',      
   url = 'https://github.com/ioakeim-h/DataGlitch',  
-  download_url = 'https://github.com/ioakeim-h/DataGlitch/archive/refs/tags/v0.1.tar.gz',    
+  download_url = 'https://github.com/ioakeim-h/DataGlitch/archive/refs/tags/v0.0.2.tar.gz',    
   keywords = ['data', 'cleaning', 'wrangling', 'engineering', 'pandas'],   
   install_requires=[            
           'rapidfuzz',
