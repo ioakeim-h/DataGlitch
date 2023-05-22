@@ -6,6 +6,9 @@ DataGlitch is a Python package designed to address common data challenges in a p
 pip install DataGlitch
 ```
 
+<br>
+<br>
+
 ## Usage
 DataGlitch currently offers three functionalities:
 - `dtype_detector`: Find mixed data types in columns. 
