@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'DataGlitch',         
   packages = ['DataGlitch'],   
-  version = '0.0.1',      
+  version = '0.0.2',      
   license='MIT',        
   description = 'DataGlitch is a Python package designed to address common data challenges, including handling mixed data types, non-ASCII values, and facilitating dataset exploration.',   
   author = 'Ioakeim Hadjimpalasis',                   
