@@ -2,17 +2,16 @@
 
 DataGlitch is a Python package designed to address common data challenges in a pandas DataFrame, including handling mixed data types, non-ASCII values, and facilitating dataset exploration. 
 
-Install with `pip`:
 ```
 pip install DataGlitch
 ```
 
-Currently offerring three functionalities:
+## Usage
+DataGlitch currently offers three functionalities:
 - `dtype_detector`: Find mixed data types in columns. 
 - `nonascii_handler`: Detect and handle non-ASCII characters.
 - `data_search`: Search for the existence of specific columns or values.
 
----
 ### dtype_detector
 
 The `dtype_detector` uses regular expressions to detect different data types in a column through the `find_numeric()` function. This function takes a pandas Series with data type `Object` as an argument and returns three new variables: `numeric`, `ambiguous` and `non_numeric`. Each of these contain a subset of the original column.
@@ -54,7 +53,7 @@ Other operations can occur directly on the dataframe. For instance, if wanting t
 df["col"] = df["col"].replace(",", ".", regex=True)
 ```
 
----
+
 ### nonascii_handler
 
 The `nonascii_handler` uses the `find_nonascii()` function to locate rows/values with non-ascii characters in a DataFrame or Series with data type `Object`. For handling non-ascii, the user is offerred three options:
@@ -69,7 +68,7 @@ from DataGlitch.nonascii_handler import find_nonascii
 df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
 
----
+
 ### data_search
 
 `data_search` performs fuzzy string matching through the `rapidfuzz` library. It looks for the existance of columns in a dataset or particular values within a column. 
