@@ -18,6 +18,7 @@ pip install DataGlitch
 ## Usage
 
 DataGlitch currently offers three functionalities: `dtype_detector`, `nonascii_handler` and `data_search`. 
+
 ---
 ### dtype_detector
 
@@ -56,6 +57,7 @@ Other operations can occur directly on the dataframe. For instance, if wanting t
 ```
 df["col"] = df["col"].replace(",", ".", regex=True)
 ```
+
 ---
 ### nonascii_handler
 
@@ -71,6 +73,7 @@ Import and apply:
 from DataGlitch.nonascii_handler import find_nonascii
 df_ascii = find_nonascii(df, drop=False, remove=False, translate=True)
 ```
+
 ---
 ### data_search
 
